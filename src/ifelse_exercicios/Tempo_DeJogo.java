@@ -34,7 +34,23 @@ public class Tempo_DeJogo {
         // 02:15 > 2 x 60 + 15 = 120 + 15 = 135 min
         //135 > 135/60 = 2.25 > 2h  25 * 60 / 100 = 15 >> 2:15
 
-
+        //1. Solução com Conversão Manual (como você mencionou)
+        //
+        //Você pode pedir ao usuário para inserir horas e minutos separadamente, converter tudo para minutos para fazer os cálculos, e depois transformar novamente em horas e minutos no final.
+        //
+        //2. Solução Usando java.time
+        //
+        //Uma solução mais elegante é utilizar a classe java.time.LocalTime, que já lida com horas e minutos e oferece métodos prontos para calcular a diferença entre tempos.
+        //
+        //
+        //
+        //Diferenças:
+        //
+        //Conversão manual: Você converte as horas para minutos e depois reverte o processo no final.
+        //
+        //API java.time: A classe LocalTime facilita o cálculo de tempo e Duration calcula a diferença automaticamente.
+        //
+        //A segunda abordagem, com java.time, é mais simples e menos propensa a erros, pois Java já lida com os cálculos de tempo para você.
 
 
     }
